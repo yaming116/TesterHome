@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_white_24dp"
+            android:title="@string/main_tab_home"/>
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/ic_dashboard_white_24dp"
+            android:title="@string/main_tab_category"/>
+        <item
+            android:id="@+id/nav_job"
+            android:icon="@drawable/ic_group_add_white_24dp"
+            android:title="@string/main_tab_job" />
+        <item
+            android:id="@+id/nav_mooc"
+            android:icon="@drawable/ic_class_white_24dp"
+            android:title="@string/main_tab_mooc" />
+        <item
+            android:id="@+id/nav_bugs"
+            android:icon="@drawable/ic_bug_report_white_24dp"
+            android:title="@string/main_tab_bugs" />
+        <item
+            android:id="@+id/nav_topic"
+            android:icon="@drawable/ic_event_note_white_24dp"
+            android:title="@string/main_tab_topic" />
+
+    </group>
+
+    <group android:id="@+id/group_settings"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_wiki"
+            android:icon="@drawable/ic_wiki_pedia_white_24dp"
+            android:title="@string/main_drawer_wiki" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings_white_24dp"
+            android:title="@string/main_drawer_settings" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_info_white_24dp"
+            android:title="@string/main_drawer_about" />
+    </group>
+
+</menu>

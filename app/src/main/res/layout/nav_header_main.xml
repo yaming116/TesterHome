@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_header_bg"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@drawable/main_nav_header_bg">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/nav_account_avatar"
+        style="?attr/avatarNav"
+        android:scaleType="fitCenter"
+        fresco:placeholderImage="@mipmap/ic_launcher_logo"
+        fresco:roundAsCircle="true" />
+
+    <TextView
+        android:id="@+id/nav_account_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/spacing_medium"
+        android:layout_below="@+id/nav_account_avatar"
+        android:text="Tester Home"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/nav_account_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nav_account_username"
+        android:layout_marginLeft="@dimen/spacing_medium"
+        android:layout_marginTop="@dimen/spacing_micro"
+        android:text="tester.home@android.com" />
+
+</RelativeLayout>

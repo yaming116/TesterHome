@@ -1,0 +1,86 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="Theme.AppBaseTheme.Dark" parent="Theme.AppCompat.NoActionBar"/>
+    <style name="Theme.AppBaseTheme.Light" parent="Theme.AppCompat.Light.NoActionBar"/>
+
+    <style name="TesterHome.AppBaseTheme.Dark" parent="@style/Theme.AppBaseTheme.Dark">
+        <item name="windowActionModeOverlay">true</item>
+        <!--<item name="colorPrimary">@color/colorPrimary_dark</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark_dark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent_dark</item>-->
+    </style>
+    <style name="TesterHome.AppBaseTheme.Light" parent="@style/Theme.AppBaseTheme.Light">
+        <!-- custom attrs -->
+        <item name="avatarNav">@style/AvatarNav</item>
+        <item name="subHeaderItemHeight">48dp</item>
+
+
+        <item name="homeAsUpIndicator">@drawable/ic_menu_white_24dp</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_menu_white_24dp</item>
+
+        <item name="colorPrimary">@color/colorPrimary_light</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark_light</item>
+        <item name="colorAccent">@color/colorAccent_light</item>
+
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/white</item>
+
+    </style>
+
+
+    <style name="TesterHome.AppTheme.Light" parent="@style/TesterHome.AppBaseTheme.Light">
+        <item name="android:textColorPrimary">@color/primary_text_light</item>
+        <item name="android:textColorSecondary">@color/secondary_text_light</item>
+    </style>
+
+    <style name="TesterHome.AppTheme.AppBarOverlay.Light" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="TesterHome.AppTheme.PopupOverlay.Light" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AvatarNav">
+        <item name="android:layout_width">72dp</item>
+        <item name="android:layout_height">72dp</item>
+        <item name="android:layout_margin">@dimen/nav_avatar_margin</item>
+    </style>
+
+    <style name="AvatarNav.Medium">
+        <item name="android:layout_width">56dp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="android:layout_margin">@dimen/nav_avatar_margin</item>
+    </style>
+
+    <style name="AvatarNav.Small">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_margin">@dimen/nav_avatar_margin</item>
+    </style>
+
+    <style name="AvatarNav.Smaller">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="android:layout_margin">@dimen/nav_avatar_margin</item>
+    </style>
+
+    <style name="TesterHome.TextAppearance" parent="TextAppearance.AppCompat"/>
+
+    <style name="TesterHome.ListView" parent="@android:style/Widget.ListView">
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:paddingLeft">@dimen/list_padding_medium</item>
+        <item name="android:paddingRight">@dimen/list_padding_medium</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:fadingEdgeLength">0dp</item>
+        <item name="android:listSelector">@android:color/transparent</item>
+        <item name="android:divider">@drawable/list_divider</item>
+        <item name="android:dividerHeight">@dimen/divider_height</item>
+        <item name="android:footerDividersEnabled">false</item>
+        <item name="android:overScrollFooter">@null</item>
+    </style>
+
+    <style name="TesterHome.ListView.Full" parent="@style/TesterHome.ListView">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+    </style>
+
+
+
+</resources>

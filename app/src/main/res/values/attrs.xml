@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BaseTheme">
+        <attr name="avatarNav" format="reference"/>
+        <attr name="subHeaderItemHeight" format="reference|dimension"/>
+    </declare-styleable>
+</resources>
