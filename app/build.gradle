@@ -33,19 +33,20 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
     compile project(":auth")
+    compile project(":core")
 
     compile "com.android.support:appcompat-v7:${libs.supportVersion}"
     compile "com.android.support:design:${libs.supportVersion}"
     compile "com.flyco.systembar:FlycoSystemBar_Lib:1.0.0@aar"
 
-    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile "com.squareup.okhttp3:okhttp:${libs.okhttp3}"
 
     compile "com.facebook.fresco:fresco:${libs.fresco}"
     compile "com.facebook.fresco:imagepipeline-okhttp3:${libs.fresco}"
 
-    compile "com.facebook.stetho:stetho:${libs.stetho}"
-    compile "com.facebook.stetho:stetho-okhttp3:${libs.stetho}"
 
     compile "com.jakewharton:butterknife:${libs.butterknife}"
     apt "com.jakewharton:butterknife-compiler:${libs.butterknife}"
+
+    apt rootProject.ext.daggerCompile
 }

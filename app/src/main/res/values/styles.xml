@@ -2,7 +2,7 @@
 
     <!-- Base application theme. -->
     <style name="Theme.AppBaseTheme.Dark" parent="Theme.AppCompat.NoActionBar"/>
-    <style name="Theme.AppBaseTheme.Light" parent="Theme.AppCompat.Light.NoActionBar"/>
+    <style name="Theme.AppBaseTheme.Light" parent="Theme.AppCompat.DayNight.NoActionBar"/>
 
     <style name="TesterHome.AppBaseTheme.Dark" parent="@style/Theme.AppBaseTheme.Dark">
         <item name="windowActionModeOverlay">true</item>

@@ -15,7 +15,6 @@ import android.webkit.WebViewClient;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 
-
 /**
  * Created by Sun on 2016/7/19.
  */
