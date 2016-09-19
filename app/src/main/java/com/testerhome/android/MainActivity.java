@@ -18,7 +18,7 @@ import com.testerhome.android.core.BaseApplication;
 import com.testerhome.android.core.data.DataManager;
 import com.testerhome.android.core.data.model.HelloUser;
 import com.testerhome.android.core.data.model.OAuth;
-import com.testerhome.android.core.injection.module.ActivityModule;
+import com.testerhome.android.inject.module.ActivityModule;
 
 import javax.inject.Inject;
 

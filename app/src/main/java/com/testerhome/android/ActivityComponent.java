@@ -2,8 +2,7 @@ package com.testerhome.android;
 
 import com.testerhome.android.core.injection.ActivityScope;
 import com.testerhome.android.core.injection.component.ApplicationComponent;
-import com.testerhome.android.core.injection.module.ActivityModule;
-import com.testerhome.android.core.injection.module.ApplicationModule;
+import com.testerhome.android.inject.module.ActivityModule;
 
 import dagger.Component;
 
