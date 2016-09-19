@@ -1,0 +1,62 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.neenbedankt.android-apt'
+
+
+def libs = rootProject.ext.libraries // 库
+def cfg  = rootProject.ext.configuration  //
+
+android {
+    compileSdkVersion cfg.compileSdkVersion
+    buildToolsVersion cfg.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion cfg.minSdkVersion
+        targetSdkVersion cfg.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/maven/com.google.dagger/dagger/pom.properties'
+        exclude 'META-INF/maven/com.google.dagger/dagger/pom.xml'
+    }
+
+    //Needed because of this https://github.com/square/okio/issues/58
+    lintOptions {
+        warning 'InvalidPackage'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile project(":auth")
+    compile "com.android.support:appcompat-v7:${libs.supportVersion}"
+
+    compile "com.squareup.okhttp3:okhttp:${libs.okhttp}"
+    compile "com.squareup.okhttp3:logging-interceptor:${libs.okhttp}"
+
+
+    compile "com.facebook.stetho:stetho:${libs.stetho}"
+    compile "com.facebook.stetho:stetho-okhttp3:${libs.stetho}"
+
+    compile "com.squareup.retrofit2:adapter-rxjava:${libs.retrofit}"
+    compile "com.squareup.retrofit2:retrofit:${libs.retrofit}"
+    compile "com.squareup.retrofit2:converter-gson:${libs.retrofit}"
+
+    compile "com.google.code.gson:gson:${libs.gson}"
+
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'io.reactivex:rxjava:1.1.10'
+
+    compile 'com.jakewharton.byteunits:byteunits:0.9.1'
+
+    compile 'com.google.dagger:dagger:2.6.1'
+    apt rootProject.ext.daggerCompile
+}
